@@ -1,0 +1,14 @@
+version: 0.2
+run-as: root
+env:
+  git-credential-helper: yes
+
+phases:
+  install:
+    runtime-version:
+      nodejs: 18
+    commands:
+      - npm install -g serverless@3.27.0
+  build:
+    commands:
+      - serverless deploy --verbose --stage=${ENVIRONMENT_NAME}
