@@ -21,7 +21,7 @@ const serverlessConfiguration: AWS = {
         region: 'us-east-2',
         deploymentMethod: 'direct',
         lambdaHashingVersion: '20201221',
-        logRetentionInDays: 1,
+        logRetentionInDays: 7,
         runtime: 'nodejs18.x',
         endpointType: 'REGIONAL',
         apiGateway: {
@@ -32,8 +32,8 @@ const serverlessConfiguration: AWS = {
             apiGateway: true,
             lambda: true
         },
-        deploymentBucket: '',
-        cfnRole: ''
+        deploymentBucket: ,
+        cfnRole: 
     },
     params: config,
     custom: {
@@ -74,11 +74,6 @@ const serverlessConfiguration: AWS = {
             memorySize: 128,
             maximumRetryAttempts: 0,
             role: '',
-            vpc: {
-                securityGroups:[],
-                subnetIds: []
-            },
-            layers: [],
             events: [
                 {
                     http: {
