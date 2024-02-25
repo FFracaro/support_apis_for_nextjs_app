@@ -22,7 +22,7 @@ const serverlessConfiguration: AWS = {
         deploymentMethod: 'direct',
         lambdaHashingVersion: '20201221',
         logRetentionInDays: 7,
-        runtime: 'nodejs18.x',
+        runtime: 'nodejs20.x',
         endpointType: 'REGIONAL',
         apiGateway: {
             disableDefaultEndpoint: true,

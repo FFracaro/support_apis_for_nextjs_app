@@ -6,7 +6,7 @@ env:
 phases:
   install:
     runtime-version:
-      nodejs: 18
+      nodejs: 20
     commands:
       - npm install -g serverless@3.27.0
   build:
