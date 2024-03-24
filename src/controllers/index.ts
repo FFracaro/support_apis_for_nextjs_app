@@ -1,1 +1,1 @@
-export * from './about.controller'
+export * from './get-blog-posts.controller'
